@@ -8,6 +8,8 @@ Homebrew tap for [claude-jail](https://github.com/oakblu/claude-jail) — a Dock
 brew install oakblu/claude-jail/claude-jail
 ```
 
+> Note: `brew install oakblu/claude-jail` (short form) does not work — Homebrew requires the full `tap/formula` form for third-party taps.
+
 ## Usage
 
 ```bash
