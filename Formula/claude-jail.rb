@@ -11,12 +11,6 @@ class ClaudeJail < Formula
     bin.install "scripts/claude-jail" => "claude-jail"
   end
 
-  def post_install
-    system "#{bin}/claude-jail", "--install", "--quiet"
-  rescue StandardError
-    # Non-fatal — caveats cover the manual path
-  end
-
   def caveats
     <<~EOS
       claude-jail requires Docker to be installed and running.
@@ -25,9 +19,6 @@ class ClaudeJail < Formula
         • Docker Desktop  https://www.docker.com/products/docker-desktop
         • OrbStack        https://orbstack.dev
         • Colima          brew install colima && colima start
-
-      Shell setup runs automatically. If it was skipped, run:
-        claude-jail --install
 
       To verify:
         claude-jail --help
