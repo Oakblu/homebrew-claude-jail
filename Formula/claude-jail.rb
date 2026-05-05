@@ -1,8 +1,8 @@
 class ClaudeJail < Formula
   desc "Run Claude Code in an isolated Docker sandbox"
   homepage "https://github.com/oakblu/claude-jail"
-  url "https://github.com/oakblu/claude-jail/archive/refs/tags/v1.0.8.tar.gz"
-  sha256 "094f0a4bc7b77fb2a89e5549b3ad2b88fa367903b68f7bbd3b3227aeea9e28b0"
+  url "https://github.com/oakblu/claude-jail/archive/refs/tags/v1.0.10.tar.gz"
+  sha256 "868abb940cddfc28a4072473157d56281b051ccd836fd4595ab41e4260f0717e"
   license "MIT"
 
   depends_on "bash"
